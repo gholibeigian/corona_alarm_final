@@ -1,16 +1,18 @@
 # corona_alarm_final
 Windows Server GUI
-Dear Prof. Kerer, 
 
-The Thesis is in two different folder(part)
-1. the model trainer for the face recognition (main.py will save the .yml model file in the project)
-2. the project 
+Dear Prof. Kerer,
 
-In the project there are two mains(main.py and main_wxPython.py). File mian.py has dead lock issue with 
+The thesis is in two different folders (part)
+1. the model trainer for face recognition (main.py saves the .yml model file in the project)
+2. the project
+
+There are two main files in the project (main.py and main_wxPython.py). File mian.py has deadlock problem with
 https://github.com/cztomczak/cefpython/issues/441
-It seems, when you use tkinter 8.4 or an older version of it the problem wont accure.
+It seems if you are using tkinter 8.4 or an older version of it, the problem does not occur.
 
-Main_wxPython works just fine and it does not have the issue with the deadlock!
+Main_wxPython works fine and doesn't have the deadlock problem!
+
 
 in coronal_alarm_final project:
 

@@ -1,0 +1,552 @@
+
+[2021-05-06 18:42:37] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\main.py", line 469, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\main.py", line 68, in main
+    main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, app)
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\alarm_server.py", line 29, in __init__
+    self.init_gui(window)
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\alarm_server.py", line 50, in init_gui
+    self.window.title("Corona Alarm")
+AttributeError: 'MainFrame' object has no attribute 'title'
+
+
+[2021-05-06 18:43:37] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\main.py", line 469, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\main.py", line 68, in main
+    main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, app)
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\alarm_server.py", line 34, in __init__
+    self.init_gui(window)
+  File "C:\Users\Jack\PycharmProjects\file_server\final_v7\corona_alarm_final\alarm_server.py", line 38, in init_gui
+    self.scrollbar = Scrollbar(self.window, orient=VERTICAL)
+  File "C:\Users\Jack\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 3491, in __init__
+    Widget.__init__(self, master, 'scrollbar', cnf, kw)
+  File "C:\Users\Jack\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 2568, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "scrollbar" command: application has been destroyed
+
+
+[2021-05-07 22:05:06] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 572, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 85, in main
+    app = MainFrame(root)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 188, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 195, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, localPort)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 145, in init_server
+    self.new_file_server = file_server.File_server_windows()
+TypeError: __init__() missing 2 required positional arguments: 'ip' and 'port'
+
+
+[2021-05-07 22:09:48] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 572, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 85, in main
+    app = MainFrame(root)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 188, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 195, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, self.root)# "127.0.0.1", 20001
+TypeError: __init__() missing 1 required positional argument: 'window'
+
+
+[2021-05-07 22:10:30] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 572, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 85, in main
+    app = MainFrame(root)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 188, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 195, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001,5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 145, in init_server
+    self.new_file_server = file_server.File_server_windows(localIP,port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\file_server.py", line 23, in __init__
+    self.s.bind((self.SERVER_HOST, self.SERVER_PORT))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-13 21:51:41] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 732, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 95, in main
+    app = MainFrame(root, map_style)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 259, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001,5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-14 20:14:18] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 734, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 94, in main
+    app = MainFrame(root, map_style)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 110, in __init__
+    self.master.master.focus_force() # new code from the issue https://github.com/cztomczak/cefpython/issues/535
+AttributeError: 'MainFrame' object has no attribute 'master'
+
+
+[2021-05-14 20:15:08] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 735, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 94, in main
+    app = MainFrame(root, map_style)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 115, in __init__
+    self.master.focus_force() # new code from the issue https://github.com/cztomczak/cefpython/issues/535
+AttributeError: 'MainFrame' object has no attribute 'master'
+
+
+[2021-05-15 20:25:12] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 296, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 304, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 139, in __init__
+    self.create_menu()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 186, in create_menu
+    menubar.Append(filemenu, "&Server")
+wx._core.wxAssertionError: C++ assertion "!m_menuBar" failed at ..\..\src\common\menucmn.cpp(738) in wxMenuBase::Attach(): attaching menu twice?
+
+
+[2021-05-15 20:29:18] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 299, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 307, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 139, in __init__
+    self.create_menu()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 189, in create_menu
+    menubar.Append(filemenu, "&Server")
+wx._core.wxAssertionError: C++ assertion "!m_menuBar" failed at ..\..\src\common\menucmn.cpp(738) in wxMenuBase::Attach(): attaching menu twice?
+
+
+[2021-05-15 20:34:33] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 312, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 320, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 139, in __init__
+    self.create_menu()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 201, in create_menu
+    menubar.Append(map_menue, "&")
+wx._core.wxAssertionError: C++ assertion "!m_menuBar" failed at ..\..\src\common\menucmn.cpp(738) in wxMenuBase::Attach(): attaching menu twice?
+
+
+[2021-05-15 20:53:57] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 332, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 340, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 139, in __init__
+    self.create_menu()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 196, in create_menu
+    map_menue.Append(map_style_menu, "&Map Styles")
+TypeError: Menu.Append(): arguments did not match any overloaded call:
+  overload 1: argument 1 has unexpected type 'Menu'
+  overload 2: argument 1 has unexpected type 'Menu'
+  overload 3: argument 1 has unexpected type 'Menu'
+
+
+[2021-05-15 20:59:43] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 333, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 341, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 139, in __init__
+    self.create_menu()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 195, in create_menu
+    map_style_menu.SetBitmap(wx.ArtProvider.GetBitmap(wx.ART_WARNING))
+AttributeError: 'Menu' object has no attribute 'SetBitmap'
+
+
+[2021-05-15 21:24:48] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 385, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 393, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 139, in __init__
+    self.create_menu()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 259, in create_menu
+    self.Bind(wx.EVT_MENU, self.alarm_navigator_start, alarm_navigator_start)
+AttributeError: 'MainFrame' object has no attribute 'alarm_navigator_start'
+
+
+[2021-05-15 21:28:48] TypeError: alarm_navigator_start() takes 1 positional argument but 2 were given
+
+
+[2021-05-15 21:36:15] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 568, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 576, in initialize
+    frame = MainFrame()
+TypeError: __init__() missing 1 required positional argument: 'map_style'
+
+
+[2021-05-15 21:36:53] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 568, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 576, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 177, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 332, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001,5001, self.root)# "127.0.0.1", 20001
+AttributeError: 'MainFrame' object has no attribute 'root'
+
+
+[2021-05-15 21:38:18] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 568, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 576, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 177, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 332, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001,5001, self.win_tk)# "127.0.0.1", 20001
+AttributeError: 'MainFrame' object has no attribute 'win_tk'
+
+
+[2021-05-15 21:39:35] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 570, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 578, in initialize
+    frame = MainFrame()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 108, in __init__
+    self.start_tk()
+TypeError: start_tk() missing 1 required positional argument: 'e'
+
+
+[2021-05-15 21:42:11] TypeError: stamen_terrain_style() takes 1 positional argument but 2 were given
+
+
+[2021-05-15 21:46:49] TypeError: reload() takes 1 positional argument but 2 were given
+
+
+[2021-05-15 21:51:37] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 601, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 609, in initialize
+    frame = MainFrame()
+TypeError: __init__() missing 1 required positional argument: 'map_style'
+
+
+[2021-05-15 21:52:30] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 601, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 609, in initialize
+    frame = MainFrame(self.map_style)
+AttributeError: 'CefApp' object has no attribute 'map_style'
+
+
+[2021-05-15 21:53:34] TypeError: reload() takes 1 positional argument but 2 were given
+
+
+[2021-05-15 21:55:26] TypeError: person_navigator_start() takes 1 positional argument but 2 were given
+
+
+[2021-05-15 21:57:16] TypeError: person_navigator_start() takes 1 positional argument but 2 were given
+
+
+[2021-05-15 22:06:11] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 461, in start_file_server
+    self.main_file_server = file_server.File_server_windows("127.0.0.1", 5001)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\file_server.py", line 23, in __init__
+    self.s.bind((self.SERVER_HOST, self.SERVER_PORT))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-15 22:33:05] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 471, in start_file_server
+    self.main_file_server = file_server.File_server_windows("127.0.0.1", 5001)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\file_server.py", line 23, in __init__
+    self.s.bind((self.SERVER_HOST, self.SERVER_PORT))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-15 22:37:08] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 349, in reload
+    self.browser.GetBrowser.Reload()
+AttributeError: 'cefpython_py39.PyBrowser' object has no attribute 'GetBrowser'
+
+
+[2021-05-15 22:39:49] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 349, in reload
+    self.browser.GetBrowser.Reload()
+AttributeError: 'cefpython_py39.PyBrowser' object has no attribute 'GetBrowser'
+
+
+[2021-05-15 22:52:12] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 353, in reload
+    self.get_browser().Reload()
+AttributeError: 'MainFrame' object has no attribute 'get_browser'
+
+
+[2021-05-15 22:52:54] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 349, in reload
+    self.browser.GetBrowser.Reload()
+AttributeError: 'cefpython_py39.PyBrowser' object has no attribute 'GetBrowser'
+
+
+[2021-05-15 23:04:19] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 346, in reload
+    print(cef.GetDataUrl())
+  File "cefpython_py39.pyx", line 1032, in cefpython_py39.GetDataUrl
+TypeError: GetDataUrl() takes at least 1 positional argument (0 given)
+
+
+[2021-05-16 12:06:09] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 347, in reload
+    print(cef.Hand)
+AttributeError: module 'cefpython3.cefpython_py39' has no attribute 'Hand'
+
+
+[2021-05-16 12:30:42] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 342, in reload
+    window_info = cef.WindowInfo()
+AttributeError: 'int' object has no attribute 'WindowInfo'
+
+
+[2021-05-16 12:37:08] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 342, in reload
+    window_info = cef.WindowInfo()
+AttributeError: 'int' object has no attribute 'WindowInfo'
+
+
+[2021-05-16 12:37:26] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 348, in reload
+    print(cef.Hand)
+AttributeError: module 'cefpython3.cefpython_py39' has no attribute 'Hand'
+
+
+[2021-05-16 12:45:30] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 360, in reload
+    self.__init__('OpenStreetMap')
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 202, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 389, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 12:47:59] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 360, in reload
+    self.__init__('OpenStreetMap')
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 202, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 389, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 12:55:34] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 360, in reload
+    self.__init__('OpenStreetMap')
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 202, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 389, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 12:59:30] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 366, in reload
+    self.__init__('OpenStreetMap')
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 395, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 13:13:44] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 651, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 659, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 415, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 13:14:50] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 651, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 659, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 415, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 13:15:49] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 651, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 659, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 415, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-16 21:02:32] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 368, in reload
+    self.browser.LoadUrl()
+TypeError: PyBrowser.LoadUrl() takes exactly one argument (0 given)
+
+
+[2021-05-16 21:11:07] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 513, in stop_file_server
+    if self.main_alarm_server.new_file_server != None:
+AttributeError: 'MainFrame' object has no attribute 'main_alarm_server'
+
+
+[2021-05-16 21:12:15] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 513, in stop_file_server
+    if self.main_alarm_server.new_file_server != None:
+AttributeError: 'MainFrame' object has no attribute 'main_alarm_server'
+
+
+[2021-05-18 14:40:23] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 442, in input_red_geojason
+    import_red_geojason.Input_red_geojason(self.root)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\import_red_geojason.py", line 23, in __init__
+    graphic_map_button.pack(side=CENTER)
+  File "C:\Users\Jack\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 2388, in pack_configure
+    self.tk.call(
+_tkinter.TclError: bad side "center": must be top, bottom, left, or right
+
+
+[2021-05-18 14:56:25] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 645, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 653, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 163, in __init__
+    wx.ShowFullScreen(True)
+AttributeError: module 'wx' has no attribute 'ShowFullScreen'
+
+
+[2021-05-18 14:56:44] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 645, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 653, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 163, in __init__
+    wx.Frame.ShowFullScreen(True)
+TypeError: TopLevelWindow.ShowFullScreen(): first argument of unbound method must have type 'TopLevelWindow'
+
+
+[2021-05-18 15:02:35] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 645, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 653, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 163, in __init__
+    wx.Frame.ShowFullScreen(True)
+TypeError: TopLevelWindow.ShowFullScreen(): first argument of unbound method must have type 'TopLevelWindow'
+
+
+[2021-05-18 15:02:42] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 645, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 653, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 163, in __init__
+    wx.Frame.ShowFullScreen(True)
+TypeError: TopLevelWindow.ShowFullScreen(): first argument of unbound method must have type 'TopLevelWindow'
+
+
+[2021-05-19 19:30:23] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 732, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 95, in main
+    app = MainFrame(root, map_style)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 259, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001,5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-19 20:37:43] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 732, in <module>
+    main()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 95, in main
+    app = MainFrame(root, map_style)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 208, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main.py", line 259, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001,5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+
+[2021-05-19 20:39:43] Traceback (most recent call last):
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 652, in OnInit
+    self.initialize()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 660, in initialize
+    frame = MainFrame("OpenStreetMap")
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 215, in __init__
+    self.start_servers()
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\main_wxPython.py", line 415, in start_servers
+    self.main_alarm_server = alarm_server.Alarm_server("127.0.0.1", 20001, 5001, self.root)# "127.0.0.1", 20001
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 26, in __init__
+    self.init_server(localIP, port_alarm, port_file_server)
+  File "C:\Users\Jack\PycharmProjects\corona_alarm_final\corona_alarm_final\alarm_server.py", line 144, in init_server
+    self.UDPServerSocket.bind((localIP, port_alarm))
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
